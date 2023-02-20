@@ -5,6 +5,7 @@
 body{
 	background-color:#000066;
     overflow: hidden;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .balloon{
 	height: 60px;
@@ -87,17 +88,18 @@ left: 40%;
 	animation-duration: 4s;
 }
 
+
 section {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     height: 100vh;
 }
 
 .card {
     position: relative;
-    width: 300px;
-    height: 425px;
+    width: 600px;
+    height: 565px;
     border: 10px solid #9612eb;
     margin: 60px auto 0 auto;
     box-shadow: inset 10px 0px 15px 0px rgba(0, 0, 0, 0.1);
@@ -116,15 +118,16 @@ section {
 .strikethrough {
     text-decoration: line-through;
 }
-.card .text-container #head {
-    font-family: 'Nobile', sans-serif;
-    font-size: 1.5em;
-    margin: 60px auto 60px auto;
+.card  .intro {
+    /* color: #fff; */
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.30);
+    font-family: 'Cookie', cursive;
+    font-size: 18px;
 }
 .card p {
     font-size: 1.1em;
     line-height: 1.4;
-    font-family: 'Nobile';
     color: #331717;
     font-style: italic;
     text-align: center;
@@ -143,15 +146,16 @@ section {
     background-size: contain;
     transform-style: preserve-3d;
     transform-origin: 0% 50%;
-    transform: perspective(800px) rotateY(0deg);
+    transform: perspective(1800px) rotateY(0deg);
     transition: all 0.8s ease-in-out;
 }
 .card:hover .front {
-    transform: perspective(800px) rotateY(-170deg);
+    transform: perspective(1800px) rotateY(-170deg);
+    box-shadow: inset 100px 20px 100px rgba(0,0,0,.2), 0 10px 100px rgba(0,0,0,0.5);
     background-color: #41718d;
 }
 .card:hover .back {
-    transform: perspective(800px) rotateY(-170deg);
+    transform: perspective(1800px) rotateY(-170deg);
     box-shadow: 7px 0px 5px 0px rgba(0, 0, 0, 0.3), inset 2px 0px 15px 0px rgba(0, 0, 0, 0.1);
     background-color: #d2dcd2;
 }
@@ -165,7 +169,7 @@ section {
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, .5));
     transform-style: preserve-3d;
     transform-origin: 0% 50%;
-    transform: perspective(800px) rotateY(0deg);
+    transform: perspective(1800px) rotateY(0deg);
     transition: all 0.8s ease-in-out;
     background-color: #e6f0e6;
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
@@ -181,4 +185,10 @@ section {
 {
    box-shadow: 0px 6px 11px 7px rgba(0, 0, 0, 0.22);
    border-radius: 5px;
+}
+
+
+.card .footer p{
+    text-align: right !important;
+    font-family: 'Cookie', cursive;
 }
